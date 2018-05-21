@@ -1,0 +1,15 @@
+package com.thoughtworks.interview.target;
+
+import org.springframework.stereotype.Component;
+
+import com.thoughtworks.interview.model.Output;
+
+@Component
+public class StageOneProcessor extends StageProcessor {
+
+	@Override
+	public Object processInputAndFormulateOutput() {
+		return new Output(productService.getProductCount(), null);
+	}
+
+}
