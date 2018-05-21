@@ -23,4 +23,10 @@ public class RestController {
 		}
 		return "Executed Succcessfully!";    	
     }
+    
+    @GetMapping("/input")
+    @ResponseBody
+    public String input() {
+		return "Executed Succcessfully!";    	
+    }
 }
